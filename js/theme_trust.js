@@ -309,8 +309,14 @@ jQuery(document).ready(function(){
 	
 	// Show project is there is a hash in the URL
 	var projectSlug = location.hash.replace("\#","");	
-	if(projectSlug != "index"){
+	/*if(projectSlug != "index"){
 		processProject(projectSlug);
-	}	
+	}*/
+        if(!projectSlug){
+            //change this to look for the newest "open" project
+            processProject("test-video");
+        }else if(projectSlug != "index"){
+            processProject(projectSlug);
+        }
 	
 });
