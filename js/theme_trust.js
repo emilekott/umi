@@ -312,9 +312,11 @@ jQuery(document).ready(function(){
 	/*if(projectSlug != "index"){
 		processProject(projectSlug);
 	}*/
+        var firstProject = jQuery(".thumbs a").eq(1).attr('href').replace("#","");
+        
         if(!projectSlug){
-            //change this to look for the newest "open" project
-            processProject("test-video");
+            //change this to look for the first project
+            processProject(firstProject);
         }else if(projectSlug != "index"){
             processProject(projectSlug);
         }
