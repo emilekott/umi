@@ -1,5 +1,5 @@
 <?php
-
+include 'vimeo.php';
 // Load utility functions
 require_once (TEMPLATEPATH . '/admin/utilities.php');
   
