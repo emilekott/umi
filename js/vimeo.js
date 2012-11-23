@@ -3,7 +3,7 @@
       init : function(ed, url) {
          ed.addButton('vimeo', {
             title : 'Vimeo Video',
-            image : url+'/recentpostsbutton.png',
+            image : url+'/vimeo-button.png',
             onclick : function() {
                //var posts = prompt("Number of posts", "1");
                //var text = prompt("List Heading", "This is the heading text");
