@@ -1,4 +1,4 @@
-<?php get_header(); ?>	
+<?php get_header(); ?><div id="pageHead"><h1>Blog</h1></div>
 			<?php $home_content = of_get_option('ttrust_home_content'); ?>
 			<?php $c = ($home_content=="projects") ? "fullProjects" : "threeFourth" ?>			
 			<div id="content" class="<?php echo $c;?>">				

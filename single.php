@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 	<div id="pageHead">
-		<h1>
-		<?php
+		<h1>Blog
+		<?php /*
 			$category = get_the_category();			
 			global $post;
 			if(have_posts() && $category) :		    
@@ -13,7 +13,7 @@
 				else :			
 					echo $category[0]->cat_name;
 				endif;						    
-			endif; ?>
+			endif;  */ ?>
 		</h1>
 		<?php if(isset($cat_parent_id) && strlen(category_description($cat_parent_id)) > 0) echo category_description($cat_parent_id); ?>
 	</div>
