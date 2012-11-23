@@ -13,7 +13,14 @@ Template Name: Portfolio
 			<?php endif; ?>			
 
 			<div id="content" class="fullProjects clearfix">			
-				<?php include( TEMPLATEPATH . '/includes/projects.php'); ?>	
+				<?php 
+                                    if (!is_front_page()){
+                                        include( TEMPLATEPATH . '/includes/projects.php'); 
+                                    }
+                                    else{
+                                        include( TEMPLATEPATH . '/includes/projects_home.php');
+                                    }
+                                ?>		
 				
 				<?php wp_reset_query(); ?>
 				<?php while (have_posts()) : the_post(); ?>			    
