@@ -314,7 +314,7 @@ jQuery(document).ready(function(){
 	}*/
         var firstProject = jQuery(".thumbs a").eq(1).attr('href').replace("#","");
         
-        if(!projectSlug){
+        if((!projectSlug) && location == "http://localhost:8888/umi/"){ //@todo: change for Live
             //change this to look for the first project
             processProject(firstProject);
         }else if(projectSlug != "index"){
