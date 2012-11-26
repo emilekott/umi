@@ -28,8 +28,8 @@
 				<?php endif; ?>
 			<?php endif; ?>															
 			
-			<?php the_excerpt(); ?>
-			<?php more_link(); ?>		
+			<?php //the_excerpt(); ?><?php the_content(); ?>
+			<?php //more_link(); ?>		
 		</div>																				
     </div>				
 
