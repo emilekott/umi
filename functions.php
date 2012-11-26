@@ -1,6 +1,14 @@
 <?php
 include 'vimeo.php';
 
+/*
+ * woocommerce stuff
+ */
+remove_action( 'woocommerce_before_main_content',
+    'woocommerce_breadcrumb', 20, 0);
+
+
+
 function register_button( $buttons ) {
    array_push( $buttons, "|", "vimeo" );
    return $buttons;

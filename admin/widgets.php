@@ -49,6 +49,16 @@ register_sidebar(array(
 	'after_title' => '</h3>'
 ));
 
+register_sidebar(array(
+	'name' => 'Shop Sidebar',
+	'id' => 'sidebar_shop',
+	'description' => __('Widget area for the sidebar in shop.', 'themetrust'),
+	'before_widget' => '<div id="%1$s" class="oneFourth %2$s sidebarBox widgetBox">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>'
+));
+
 
 /* Allow widgets to use shortcodes */
 add_filter('widget_text', 'do_shortcode');
